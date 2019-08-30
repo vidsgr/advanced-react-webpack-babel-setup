@@ -1,17 +1,19 @@
 {
-  "name": "advanced-react-webpack-babel-setup",
+  "name": "project-A",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config build-utils/webpack.config.js --env.env=dev",
+    "start": "node server/index.js",
+    "dev": "webpack --config build-utils/webpack.config.js --env.env=dev && nodemon server/index.js",
+    "dev:frontend": "webpack-dev-server --config build-utils/webpack.config.js --env.env=dev",
     "build": "webpack --config build-utils/webpack.config.js --env.env=prod",
     "build:analyze": "npm run build -- --env.addon=bundleanalyze --env.addon=bundlevisualizer",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "keywords": [],
-  "author": "Robin Wieruch <opensource@rwieruch.com> (https://www.robinwieruch.de)",
-  "license": "MIT",
+  "author": "Vidya Sagar",
+  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
@@ -39,8 +41,23 @@
     "webpack-visualizer-plugin": "^0.1.11"
   },
   "dependencies": {
+    "@material-ui/core": "^4.3.3",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun-js": "^0.22.0",
+    "mongoose": "^5.6.11",
+    "morgan": "^1.9.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "socket-io": "^1.0.0",
+    "socket.io-client": "^2.2.0",
+    "stripe": "^7.8.0"
   }
 }

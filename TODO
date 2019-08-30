@@ -1,0 +1,12 @@
+We need to check :
+https://dev.to/kedar9/creating-a-node-app-with-react-webpack-4-babel-7-express-and-sass-3mae
+
+And merge it with mern-starter along with material-ui
+
+Backend is merged with testing
+@material-ui is installed
+
+But I need to find common between mern-starter and Andrew code.
+
+if they use sass, I need to use webpack configuration from above. 
+Otherwise it should work
